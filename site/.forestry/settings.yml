@@ -17,5 +17,5 @@ file_template: ":filename:"
 build:
   preview_command: hugo
   publish_command: hugo
-  output_directory: public
+  output_directory: site/public
 version: 0.38.1
