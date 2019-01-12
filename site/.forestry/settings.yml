@@ -17,7 +17,7 @@ front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
 build:
-  preview_command: hugo
-  publish_command: hugo
+  preview_command: hugo -E -F -D -d public
+  publish_command: hugo -d public
   output_directory: "/public"
 version: 0.38.1
