@@ -1,7 +1,7 @@
 # Site settings
 # --------------
 # You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ .Site.Params.myvariable }}.
+# in the templates via {{ .Site.Params.myvariable }}.            baseURL = "https://<YOUR-USER-NAME>.github.io/"
 baseurl = "/" # The subpath of your site, e.g. / or /blog
 languageCode = "en-us"
 languageLang = "en"
@@ -19,7 +19,7 @@ destination = "../dist/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Enable this to have links relativized by Hugo
-# E.g,  if your /post/first/ page contains a link 
+# E.g,  if your /post/first/ page contains a link
 # to /about/, Hugo will rewrite the URL to ../../about/
 relativeURLs = false
 
@@ -39,7 +39,7 @@ Google search results) and in your RSS feed description.
 '''
 author = "Your name"
 currency = "USD"
-snipcart_test_api_key = ""
+snipcart_test_api_key = "MGQzMWVkMmYtMzhlZC00MjU4LTk3MjQtZDNmMzM1MTI1ZDlhNjM1OTY4NjY2NjE5MTAwMzMy"
 snipcart_live_api_key = ""
 cloudinary_base_url = "https://res.cloudinary.com/dwalkr"
 
