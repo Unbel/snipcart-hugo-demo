@@ -37,11 +37,11 @@ Write an awesome description for your new site here. You can edit this
 line in config.yml. It will appear in your document head meta (for
 Google search results) and in your RSS feed description.
 '''
-author = "Your name"
+author = "That Shop"
 currency = "USD"
 snipcart_test_api_key = "MGQzMWVkMmYtMzhlZC00MjU4LTk3MjQtZDNmMzM1MTI1ZDlhNjM1OTY4NjY2NjE5MTAwMzMy"
 snipcart_live_api_key = ""
-# cloudinary_base_url = "https://res.cloudinary.com/dwalkr"
+cloudinary_base_url = "https://res.cloudinary.com/dwalkr"
 
 [taxonomies]
   category = "categories"
