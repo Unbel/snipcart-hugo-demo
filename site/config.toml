@@ -3,9 +3,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ .Site.Params.myvariable }}.            baseURL = "https://<YOUR-USER-NAME>.github.io/"
 baseurl = "/" # The subpath of your site, e.g. / or /blog    ЭТО САЙТ  zen-hamilton-8f9187.netlify.com
-languageCode = "en-us"
+languageCode = "ru"
 languageLang = "ru"      #здесь язык для снипкарт и сайта вообще
-defaultContentLanguage = "en"
+defaultContentLanguage = "ru"
 title = "Demo Store"
 
 # Build settings
