@@ -3,10 +3,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ .Site.Params.myvariable }}.            baseURL = "https://<YOUR-USER-NAME>.github.io/"
 baseurl = "/" # The subpath of your site, e.g. / or /blog    ЭТО САЙТ  zen-hamilton-8f9187.netlify.com
-languageCode = "ru"
+languageCode = "ru"  #или тут
 languageLang = "ru"      #здесь язык для снипкарт и сайта вообще
-defaultContentLanguage = "ru"
-title = "Demo Store"
+defaultContentLanguage = "ru"  #или здесь
+title = "Доставка Корейских Блюд"
 
 # Build settings
 # --------------
@@ -33,16 +33,19 @@ enableEmoji = true
 # -------------
 [params]
 description = '''
-Write an awesome description for your new site here. You can edit this
-line in config.yml. It will appear in your document head meta (for
-Google search results) and in your RSS feed description.
+Многие в нашем городе любят Корейскую кухню 🍛
+Но не везде её правильно и вкусно готовят 😕
+Мы предлагаем Вам большой выбор, начиная от салатов 🥗 до горячих блюд 🥘
+Вкусно, качественно и по приемлемым ценам ✔️
+В этом Вы можете убедиться лично, сделав заказ 📝
+
 '''
-author = "That Shop"
-currency = "USD"
-#тут оба нужны
+author = "cook_son34"
+currency = "₽"
+#тут оба нужны а чтоб работал еще в снипкарте прикрепить его в домены чтоб он проверялся всегда там сам
 snipcart_test_api_key = "MGQzMWVkMmYtMzhlZC00MjU4LTk3MjQtZDNmMzM1MTI1ZDlhNjM1OTY4NjY2NjE5MTAwMzMy"
 snipcart_live_api_key = "M2JlZWFjMjgtNTczYS00NmMwLTgzOWYtMmJkOTAyYzUxNzQ0NjM1OTY4NjY2NjE5MTAwMzMy"
-cloudinary_base_url = "https://res.cloudinary.com/dwalkr"
+cloudinary_base_url = "https://res.cloudinary.com/dnyfubwui"
 
 [taxonomies]
   category = "categories"
