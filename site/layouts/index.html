@@ -20,7 +20,7 @@
       var cart = Snipcart.api.cart.get();
       if (page = "billing-address")
         {
-          var billname = cart.customFields[0].value;
+          var billname = cart.name.value;
           console.log(billname);
 
         // try set billing details here
@@ -64,7 +64,7 @@
 //     if (page = "billing-address") {
 //         //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
 //
-//       // try set billing details here      это  from codepen  https://codepen.io/iCompute/pen/wPWOzG
+//       // try set billing details here      это  from codepen  https://codepen.io/iCompute/pen/wPWOzG ПОЛЕЗНО, ТАм МОЖНО ДОСТАВКУ ДОБАВИТЬ
 //        Snipcart.api.cart.billingAddress({
 //          "name": "Имя любимое мое",
 //              "email": "YOUR@MAIL.not.required",
