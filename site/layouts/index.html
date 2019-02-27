@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <h1 class="title is-1">{{ .Site.Title }}</h1>
+
 <div class="products columns">
 {{ range where $.Site.RegularPages "Section" "products" }}
 <div class="product column is-one-third">
@@ -11,54 +12,81 @@
 
 <script type="text/javascript">
 
-Snipcart.execute('config', 'show_continue_shopping', true);  //Это кнопочка ПРОДОЛЖИТЬ ПОКУПКИ и она рабоает от отдной этой строчки
-// это потому что API снипкарта snipcart.js уже подключено  https://snipcart.com/blog/4-common-configurations-checkout туториал
-// Snipcart.api.items.clear("das","fsafaf",true);   бля
+  Snipcart.api.configure('show_continue_shopping', true);
+  Snipcart.execute('config', 'show_continue_shopping', true);
 
 
-Snipcart.subscribe('page.changed', function (page) {
-    console.log(page);
-//  это хз че но без нее не работает дефаулт автозаполнение
+  Snipcart.subscribe('page.changed', function (page) {
+      console.log(page);
+      var cart = Snipcart.api.cart.get();
+      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то== поставил
+        {
+          // var billname = cart.customFields[0].value;
+          // console.log(billname);
+
+        // try set billing details here
+         Snipcart.api.cart.billingAddress({
+                    "name": "Имя гурмана!!!",
+                        "email": "YOUR@MAIL.not.required",
+                        // "address1": "",
+                        "address2": "--------------------",
+                        "city": "Волжский",
+                        "province": "Волгоградская область",
+                        "country": "Россия",
+                        "company": "---------------------",
+                        "postalCode": "-------------------",
+                        "phone" : "ВПИШИ ЗДЕСЯ ТЕЛЕФОНУ ОБЯЗАТЕЛЬНО"
+      }).then (function (cart)
+           {
+             console.log (cart); // It will contain the cart details with updated values.
+           });
+
+        }
+  });
 
 
-// УРА А вот и получилось вызвать правильно перез переменную cart и поставить по умолчанию текст!!!
-    var cart = Snipcart.api.cart.get();
-    if (page = "billing-address")   //  ненужная хреня видать не особо но пусть будет
-
-      // try set billing details here
-       Snipcart.api.cart.billingAddress({
-         // "name": "Имя любимое мое",
-             "email": "YOUR@MAIL.not.required",
-             // "address1": "",
-             "address2": "--------------------",
-             "city": "Волжский",
-             "province": "Волгоградская область",
-             "country": "Россия",
-             "company": "---------------------",
-             "postalCode": "-------------------",
-             "phone" : "Укажите ОБЯЗАТЕЛЬНО"
-
-    }).then (function (cart)
-         {
-           console.log (cart); // It will contain the cart details with updated values.
-         });
 
 
-});
 
-// Snipcart.api.cart.billingAddress({
-//     "name": "John Doe",
-//     "email": "geeks@snipcart.com",
-//     "address1": "226 rue St-Joseph E",
-//     "address2": "Suite 200",
-//     "city": "рууру",
-//     "province": "QC",
-//     "country": "CA",
-//     "company": "Snipcart",
-//     "postalCode": "руру"
-// }).then (function (cart) {
-//     console.log (cart); // It will contain the cart details with updated values.
+
+
+// Snipcart.execute('config', 'show_continue_shopping', true);  //Это кнопочка ПРОДОЛЖИТЬ ПОКУПКИ и она рабоает от отдной этой строчки
+// // это потому что API снипкарта snipcart.js уже подключено  https://snipcart.com/blog/4-common-configurations-checkout туториал
+// // Snipcart.api.items.clear("das","fsafaf",true);   бля
+//
+//
+// Snipcart.subscribe('page.changed', function (page) {
+//     console.log(page);
+// //  это хз че но без нее не работает дефаулт автозаполнение
+//
+//
+// // УРА А вот и получилось вызвать правильно перез переменную cart и поставить по умолчанию текст!!!
+//     var cart = Snipcart.api.cart.get();
+//     if (page = "billing-address") {
+//         //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
+//
+//       // try set billing details here      это  from codepen  https://codepen.io/iCompute/pen/wPWOzG ПОЛЕЗНО, ТАм МОЖНО ДОСТАВКУ ДОБАВИТЬ
+//        Snipcart.api.cart.billingAddress({
+//          "name": "Имя любимое мое",
+//              "email": "YOUR@MAIL.not.required",
+//              // "address1": "",
+//              "address2": "--------------------",
+//              "city": "Волжский",
+//              "province": "Волгоградская область",
+//              "country": "Россия",
+//              "company": "---------------------",
+//              "postalCode": "-------------------",
+//              "phone" : "Укажите ОБЯЗАТЕЛЬНО"
+//
+//     }).then (function (cart)
+//          {
+//            console.log (cart); // It will contain the cart details with updated values.
+//          });
+//
+//
 // });
+
+
 
 
 </script>
