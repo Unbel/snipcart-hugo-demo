@@ -13,7 +13,7 @@
 
 Snipcart.execute('config', 'show_continue_shopping', true);  //Это кнопочка ПРОДОЛЖИТЬ ПОКУПКИ и она рабоает от отдной этой строчки
 // это потому что API снипкарта snipcart.js уже подключено  https://snipcart.com/blog/4-common-configurations-checkout туториал
-Snipcart.api.items.clear("das","fsafaf",true);
+// Snipcart.api.items.clear("das","fsafaf",true);   бля
 
 
 Snipcart.subscribe('page.changed', function (page) {
@@ -27,16 +27,16 @@ Snipcart.subscribe('page.changed', function (page) {
 
       // try set billing details here
        Snipcart.api.cart.billingAddress({
-         "name": "Введите ваше имя",
-             "email": "",
-             "address1": "Введите адрес доставки",
-             "address2": "",
+         "name": "",
+             "email": "YOUR@MAIL.not.required",
+             "address1": "",
+             "address2": "--------------------",
              "city": "Волжский",
              "province": "Волгоградская область",
              "country": "Россия",
-             "company": "",
-             "postalCode": "это поле оставьте как есть",
-             "phone" : "ОБЯЗАТЕЛЬНО"
+             "company": "---------------------",
+             "postalCode": "-------------------",
+             "phone" : "Укажите ОБЯЗАТЕЛЬНО"
 
     }).then (function (cart)
          {
