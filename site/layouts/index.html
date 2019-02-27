@@ -23,7 +23,7 @@ Snipcart.subscribe('page.changed', function (page) {
 
 // УРА А вот и получилось вызвать правильно перез переменную cart и поставить по умолчанию текст!!!
     var cart = Snipcart.api.cart.get();
-    if (page = "billing-address")   //  ненужная хреня видать не особо но пусть будет
+    // if (page = "billing-address")   //  ненужная хреня видать не особо но пусть будет
 
       // try set billing details here
        Snipcart.api.cart.billingAddress({
