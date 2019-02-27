@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <h1 class="title is-1">{{ .Site.Title }}</h1>
+
 <div class="products columns">
 {{ range where $.Site.RegularPages "Section" "products" }}
 <div class="product column is-one-third">
@@ -20,12 +21,12 @@
       var cart = Snipcart.api.cart.get();
       if (page = "billing-address")
         {
-          var billname = cart.name.value;
-          console.log(billname);
+          // var billname = cart.name.value;
+          // console.log(billname);
 
         // try set billing details here
          Snipcart.api.cart.billingAddress({
-                    "name": "Имя любимое мое",
+                    "name": "МЯЯЯЯЯЯЯЯЯ",
                         "email": "YOUR@MAIL.not.required",
                         // "address1": "",
                         "address2": "--------------------",
@@ -34,7 +35,7 @@
                         "country": "Россия",
                         "company": "---------------------",
                         "postalCode": "-------------------",
-                        "phone" : "Укажите ОБЯЗАТЕЛЬНО"
+                        "phone" : "Укажите ТЕЛЕФОНУ ОБЯЗАТЕЛЬНО"
       }).then (function (cart)
            {
              console.log (cart); // It will contain the cart details with updated values.
