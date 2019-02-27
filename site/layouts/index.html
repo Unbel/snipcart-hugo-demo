@@ -24,10 +24,9 @@ Snipcart.subscribe('page.changed', function (page) {
 // УРА А вот и получилось вызвать правильно перез переменную cart и поставить по умолчанию текст!!!
     var cart = Snipcart.api.cart.get();
     if (page = "billing-address") {
-      var billname = cart.name.value;
-      console.log(billname);  //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
+        //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
 
-      // try set billing details here
+      // try set billing details here      это  from codepen  https://codepen.io/iCompute/pen/wPWOzG
        Snipcart.api.cart.billingAddress({
          "name": "Имя любимое мое",
              "email": "YOUR@MAIL.not.required",
