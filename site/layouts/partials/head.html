@@ -24,5 +24,32 @@
   {{- end -}}
 "></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+
+$(function() {
+
+$(window).scroll(function() {
+
+if($(this).scrollTop() != 0) {
+
+$('#toTop').fadeIn();
+
+} else {
+
+$('#toTop').fadeOut();
+
+}
+
+});
+
+$('#toTop').click(function() {
+
+$('body,html').animate({scrollTop:0},800);
+
+});
+
+});
+
+</script>
   </head>
   <body>

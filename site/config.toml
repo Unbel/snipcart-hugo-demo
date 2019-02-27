@@ -44,7 +44,7 @@ author = "cook_son34"
 currency = "₽"
 #тут оба нужны а чтоб работал еще в снипкарте прикрепить его в домены чтоб он проверялся всегда там сам
 snipcart_test_api_key = "MGQzMWVkMmYtMzhlZC00MjU4LTk3MjQtZDNmMzM1MTI1ZDlhNjM1OTY4NjY2NjE5MTAwMzMy"
-snipcart_live_api_key = "M2JlZWFjMjgtNTczYS00NmMwLTgzOWYtMmJkOTAyYzUxNzQ0NjM1OTY4NjY2NjE5MTAwMzMy"
+snipcart_live_api_key = "MGQzMWVkMmYtMzhlZC00MjU4LTk3MjQtZDNmMzM1MTI1ZDlhNjM1OTY4NjY2NjE5MTAwMzMy" # два тест ключа
 cloudinary_base_url = "https://res.cloudinary.com/dnyfubwui"
 
 [taxonomies]
