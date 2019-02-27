@@ -19,14 +19,14 @@
   Snipcart.subscribe('page.changed', function (page) {
       console.log(page);
       var cart = Snipcart.api.cart.get();
-      if (page = "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress
+      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то== поставил
         {
-          var billname = cart.customFields[0].value;   //сука бля хз но только так  работает или нет
-          console.log(billname);
+          // var billname = cart.customFields[0].value;
+          // console.log(billname);
 
         // try set billing details here
          Snipcart.api.cart.billingAddress({
-                    "name": "нипоняла",
+                    "name": "аоогроорол",
                         "email": "YOUR@MAIL.not.required",
                         // "address1": "",
                         "address2": "--------------------",
