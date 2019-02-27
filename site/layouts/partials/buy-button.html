@@ -4,7 +4,9 @@
     data-item-name="{{ .Title }}"
     data-item-price="{{ .Params.price }}"
     data-item-url="{{ .Permalink }}"
-  
+    {{ with .Params.minQuantity }}
+    data-item-min-quantity="{{ . }}"
+    {{ end }}
     {{ with .Params.shortDescription }}
     data-item-description="{{ . }}"
     {{ end }}
@@ -18,5 +20,13 @@
     {{ end }}
 >
 В Корзину!
-<!-- Купить {{ .Title }} -->
+<!-- Купить {{ .Title }}
+
+
+урааа
+{{ with .Params.minQuantity }}
+data-item-min-quantity="{{ . }}"
+{{ end }}
+сам дописал
+-->
 </button>
