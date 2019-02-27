@@ -23,7 +23,9 @@ Snipcart.subscribe('page.changed', function (page) {
 
 // УРА А вот и получилось вызвать правильно перез переменную cart и поставить по умолчанию текст!!!
     var cart = Snipcart.api.cart.get();
-    if (page = "billing-address")   //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
+    if (page = "billing-address") {
+      var billname = cart.name.value;
+      console.log(billname);  //  нужная хреня нужна чтобы только во время указания адреса оно вызывало!!! а
 
       // try set billing details here
        Snipcart.api.cart.billingAddress({
@@ -45,6 +47,33 @@ Snipcart.subscribe('page.changed', function (page) {
 
 
 });
+
+
+// var cart = Snipcart.api.cart.get();
+//     if (page = "billing-address")
+//       {
+//         var billname = cart.name.value;
+//         console.log(billname);
+//
+//       // try set billing details here
+//        Snipcart.api.cart.billingAddress({
+//     "name": cart.customFields[0].value,
+//     "email": cart.customFields[10].value,
+//     "address1": cart.customFields[4].value,
+//     "address2": cart.customFields[5].value,
+//     "city": cart.customFields[6].value,
+//     "province": cart.customFields[8].value,
+//     "country": cart.customFields[9].value,
+//     "company": cart.customFields[3].value,
+//     "postalCode": cart.customFields[7].value
+//     }).then (function (cart)
+//          {
+//            console.log (cart); // это  from codepen  https://codepen.io/iCompute/pen/wPWOzG
+//          });
+//
+//       }
+// });
+
 
 // Snipcart.api.cart.billingAddress({
 //     "name": "John Doe",
