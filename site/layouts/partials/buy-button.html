@@ -4,6 +4,7 @@
     data-item-name="{{ .Title }}"
     data-item-price="{{ .Params.price }}"
     data-item-url="{{ .Permalink }}"
+  
     {{ with .Params.shortDescription }}
     data-item-description="{{ . }}"
     {{ end }}
