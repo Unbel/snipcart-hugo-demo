@@ -20,7 +20,7 @@ build:
   preview_command: hugo -E -F -D -d public
   publish_command: hugo -d public
   preview_env:
-  - HUGO_ENV=staging
+  - HUGO_ENV=default
   - HUGO_VERSION=0.38.1
   publish_env:
   - HUGO_ENV=production
