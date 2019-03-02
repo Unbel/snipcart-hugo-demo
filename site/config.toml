@@ -6,7 +6,7 @@ baseurl = "https://zen-hamilton-8f9187.netlify.com/" # для 2-х НЕОБХО�
 languageCode = "ru"  #или тут
 languageLang = "ru"      #здесь язык для снипкарт и сайта вообще
 defaultContentLanguage = "ru"  #или здесь
-title = "Доставка Корейских Блюд"
+title = "Cook-son 34"
 
 # Build settings
 # --------------

@@ -4,6 +4,9 @@
     data-item-name="{{ .Title }}"
     data-item-price="{{ .Params.price }}"
     data-item-url="{{ .Permalink }}"
+
+
+
     {{ with .Params.minQuantity }}
     data-item-min-quantity="{{ . }}"
     {{ end }}
@@ -18,12 +21,13 @@
         {{ safeHTMLAttr (partial (printf "custom-options/%s" .template) (dict "Index" (add 1 $index) "Option" $option)) }}
         {{- end -}}
     {{ end }}
+
 >
 В Корзину!
 <!-- Купить {{ .Title }}
 
 
-урааа
+урааа вот это
 {{ with .Params.minQuantity }}
 data-item-min-quantity="{{ . }}"
 {{ end }}

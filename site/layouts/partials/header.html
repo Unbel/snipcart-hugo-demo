@@ -1,7 +1,8 @@
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ "" | absLangURL }}">
-            <span class="site-title is-size-4">{{ .Site.Title }}</span>
+          <!-- это (то чт о ниже) в шапке самой верхней -->
+            <span class="site-title is-size-4">{{ .Site.Title }} <img src="https://res.cloudinary.com/dnyfubwui/image/upload/v1551058461/samples/ecommerce/logo.jpg" ></span>
         </a>
         <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
             <span aria-hidden="true"></span>
@@ -27,7 +28,8 @@
                 {{- end -}}
             </div>
             <div class="navbar-end snipcart-summary">
-                <a href="#" class="navbar-item snipcart-user-profile">Личный кабинет</a>
+              <!-- личный кабинет можно и закоментить -->
+                <!-- <a href="#" class="navbar-item snipcart-user-profile">Личный кабинет</a> -->
                 <a href="#" class="navbar-item snipcart-checkout">Моя корзина</a>
                 <a href="#" class="navbar-item snipcart-user-logout">Выход</a>
             </div>
