@@ -11,7 +11,7 @@ sections:
   match: "**/*"
   templates:
   - products
-upload_dir: snipcart-hugo-demo
+upload_dir: ''
 public_path: static/uploads
 front_matter_path: ''
 use_front_matter_path: 
