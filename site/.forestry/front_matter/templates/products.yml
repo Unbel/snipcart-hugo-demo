@@ -1,7 +1,6 @@
 ---
 label: Products
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -31,3 +30,5 @@ fields:
   - checkbox-option
   - simple-dropdown-option
   - advanced-dropdown-option
+pages:
+- site/content/products/новый-продукт.md
