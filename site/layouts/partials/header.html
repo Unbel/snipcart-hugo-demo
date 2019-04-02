@@ -4,6 +4,10 @@
           <!-- это (то чт о ниже) в шапке самой верхней -->
             <span class="site-title is-size-4">{{ .Site.Title }} <img src="https://res.cloudinary.com/dnyfubwui/image/upload/v1551058461/samples/ecommerce/logo.jpg" ></span>
         </a>
+        <div class="navbar-end snipcart-summary">
+Товаров в корзине: <span class="snipcart-total-items"></span> шт.
+Цена: <span class="snipcart-total-price"></span> Руб.
+</div>
         <div role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -33,5 +37,6 @@
                 <a href="#" class="navbar-item snipcart-checkout">Моя корзина</a>
                 <a href="#" class="navbar-item snipcart-user-logout">Выход</a>
             </div>
+
     </div>
 </nav>

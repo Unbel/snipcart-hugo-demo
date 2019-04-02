@@ -23,6 +23,9 @@ data-api-key="{{- if eq (getenv "HUGO_ENV") "development" -}}
 {{- else -}}
 {{ .Site.Params.snipcart_live_api_key }}
 {{- end -}}"
+
+//это чтоб автооткрывание корзины не случалось
+data-autopop="false"
 >
 </script>
 
@@ -31,6 +34,7 @@ data-cart-custom1-name="жыжа?"
 data-cart-custom1-options="а|е"
 data-cart-custom1-required="true"-->
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="/css/snipcart.min.css" rel="stylesheet" type="text/css" /> -->
     <script type="text/javascript">
 
 $(function() {
