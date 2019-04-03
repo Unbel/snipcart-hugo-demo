@@ -2,7 +2,7 @@
 date = "2018-05-15T18:42:04Z"
 image = "/samples/ecommerce/Cалат из Морской капусты.jpg"
 price = 60
-shortDescription = "Как давно вы её ели❓ и ели ли❓"
+shortDescription = "Как давно вы её ели❓ и ели ли❓ (от 3-х штук)"
 title = "Cалат из Морской капусты"
 minQuantity = 3
 
