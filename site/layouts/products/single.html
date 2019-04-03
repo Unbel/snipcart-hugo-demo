@@ -6,9 +6,10 @@
 
     <div class="product__image column is-half">
             {{ partial "images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+            <!-- тут поменяю ща baseurl с $.Site.Params.cloudinary_base_url на обычный бля...вернул..-->
     </div>
     {{ end }}
-    
+
     <div class="product__essential column is-half">
         <h1 class="title product__title">{{ .Title }}</h1>
         {{ with .Params.shortDescription }}
