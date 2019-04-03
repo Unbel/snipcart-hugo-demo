@@ -14,7 +14,7 @@ title = "Cook-son 34"
 # Set the destination the same as the Gulpfile for consistency
 destination = "../dist/"
 
-# Categories and tags disabled for an easier start
+# Categories and tags disabled for an easier start  о ТУТ читать про категории товаров!!!!
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
@@ -45,7 +45,7 @@ currency = "₽"
 #тут оба нужны а чтоб работал еще в снипкарте прикрепить его в домены чтоб он проверялся всегда там сам
 snipcart_test_api_key = "OWExMjk4YWUtNTBlNS00OTVhLTlmZWMtODQ1MjA4N2QxNGZmNjM2ODk3NjQzNTM5NjU2MTcx"
 snipcart_live_api_key = "OWExMjk4YWUtNTBlNS00OTVhLTlmZWMtODQ1MjA4N2QxNGZmNjM2ODk3NjQzNTM5NjU2MTcx" # два тест ключа
-cloudinary_base_url = "https://res.cloudinary.com/dnyfubwui"
+#cloudinary_base_url = "https://res.cloudinary.com/dnyfubwui"
 
 [taxonomies]
   category = "categories"
