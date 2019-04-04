@@ -2,7 +2,7 @@
 # --------------
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ .Site.Params.myvariable }}.            baseURL = "https://<YOUR-USER-NAME>.github.io/"
-baseurl = "https://cookson.netlify.com/" # для 2-х магазиноы уже НЕОБХОДИМО? The subpath of your site, e.g. / or /blog    ЭТО САЙТ   https://cookson.netlify.com/
+baseurl = "https://cookson.ru/" # для 2-х магазиноы уже НЕОБХОДИМО? The subpath of your site, e.g. / or /blog    ЭТО САЙТ   https://cookson.netlify.com/
 # baseurltwo = "/"
 languageCode = "ru"  #или тут
 languageLang = "ru"      #здесь язык для снипкарт и сайта вообще
