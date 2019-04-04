@@ -36,7 +36,7 @@
   Snipcart.subscribe('page.changed', function (page) {
       console.log(page);
       var cart = Snipcart.api.cart.get();
-      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то== поставил
+      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то "=="" поставил и заработоло кажись
         {
           // var billname = cart.customFields[0].value;
           // console.log(billname);
