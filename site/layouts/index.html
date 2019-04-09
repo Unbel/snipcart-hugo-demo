@@ -7,7 +7,7 @@
 <br>
 <h1 class="title is-1">Доставка корейской еды (demo site)</h1>
 <h2>🥗 Корейские салаты и блюда
-📝 Предзаказ за 1 день
+📝 ! Предзаказ за 1 день !
 👆Заказы на праздники, дни рождения
 🚗 Доставка
 😋 Всё свежее и очень вкусное
@@ -36,7 +36,7 @@
   Snipcart.subscribe('page.changed', function (page) {
       console.log(page);
       var cart = Snipcart.api.cart.get();
-      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то "=="" поставил и заработоло кажись
+      if (page == "billing-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА billing adress  бля всего то "==" поставил и заработоло кажись
         {
           // var billname = cart.customFields[0].value;
           // console.log(billname);
@@ -59,6 +59,30 @@
            });
 
         }
+
+        //ТУТ ниже для доставки на всякйи случай
+        if (page == "shipping-address")  // ВЫЗОВ ФУНКЦИИ ТОЛЬКО КОГДА shipping adress
+          {
+            // var billname = cart.customFields[0].value;
+            // console.log(billname);
+            // set Snipcart.api.cart.phone.required = true   хз как это сделать....,
+          // try set billing details here
+           Snipcart.api.cart.shippingAddress({
+                          // "name": "кому?",
+                          //"email": "YOUR@MAIL.not.required",
+                          // "address1": "",
+                          "address2": "--------------------",
+                          "city": "Волжский",
+                          "province": "Волгоградская область",
+                          "country": "Россия",
+                          "company": "---------------------",
+                          "postalCode": "-------------------",
+                          "phone" : "+7 - "
+        }).then (function (cart)
+             {
+               console.log (cart); // It will contain the cart details with updated values.
+             });
+
   });
 
 
