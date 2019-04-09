@@ -3,7 +3,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ .Site.Params.myvariable }}.            baseURL = "https://<YOUR-USER-NAME>.github.io/"
 # baseurl = "https://cookson.ru/" # для 2-х магазиноы уже НЕОБХОДИМО? The subpath of your site, e.g. / or /blog    ЭТО САЙТ
-baseurl = "https://cookson.ru/"  
+baseurl = "https://cookson.ru/"
 # baseurltwo = "/"
 languageCode = "ru"  #или тут
 languageLang = "ru"      #здесь язык для снипкарт и сайта вообще
@@ -45,8 +45,8 @@ description = '''
 author = "cook_son34"
 currency = "₽"
 #тут оба нужны а чтоб работал еще в снипкарте прикрепить его в домены чтоб он проверялся всегда там сам
-snipcart_test_api_key = "OWExMjk4YWUtNTBlNS00OTVhLTlmZWMtODQ1MjA4N2QxNGZmNjM2ODk3NjQzNTM5NjU2MTcx"
-snipcart_live_api_key = "OWExMjk4YWUtNTBlNS00OTVhLTlmZWMtODQ1MjA4N2QxNGZmNjM2ODk3NjQzNTM5NjU2MTcx" # два тест ключа
+snipcart_test_api_key = "YzI3ZjYxZTEtZDY1My00YTBlLWFiYzItMDUzMzI2ZjkxNTBlNjM2OTA0MzEyODg0MzI2NzU4"
+snipcart_live_api_key = "YzI3ZjYxZTEtZDY1My00YTBlLWFiYzItMDUzMzI2ZjkxNTBlNjM2OTA0MzEyODg0MzI2NzU4" # два тест ключа
 cloudinary_base_url = "https://res.cloudinary.com/dnyfubwui"
 # cloudinary_base_url = ""
 [taxonomies]
